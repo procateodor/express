@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Register</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        .loading {
+            opacity: .8;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/main.css" />
+    
+</head>
+<body>
+    <div class="login-page">
+        <div class="form">
+            
+            <p id='p1'>Join us!</p1>
+
+            <form id="form-register" class="register-form loading">
+                
+                <input id="email" name="email" type="text" placeholder="Email.." disabled/>
+
+                <input id="username" name="username" type="text" placeholder="Username.." maxlength="45" disabled/>
+
+                <input id="password" name="password" type="password" placeholder="Password.." maxlength="45" disabled/>
+
+                <input id="re-password" name="re-password" type="password" placeholder="Re-password.." maxlength="45" disabled/>
+
+                <button class="disable" id="sub" type="submit" disabled>Processing..</button>
+                <p class="message">Already register? <a href='/login/'> Log in</a></p>
+
+                <p id="err"></p>
+            </form>
+    
+        </div>
+    </div>
+
+    <script src="/assets/scripts/sha1.js"></script>
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous">
+    </script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.12.0/validate.min.js"></script>
+    <script src="/assets//scripts/main2.js"></script>
+</body>
+</html>
